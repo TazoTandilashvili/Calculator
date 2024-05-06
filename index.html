@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container backgroundStyle0" >
+        <header class="displayFlex">
+            <h1 class="titles headertxt-0">calc</h1>
+            <div class="them-section displayFlex">
+                <h4 class="them-title headertxt-0">theme</h4>
+                
+                <div class="switch-button-section displayFlex">
+                    <div class="them-numeration headertxt-0 displayFlex">
+                        <h5 class="numeration">1</h5>
+                        <h5 class="numeration">2</h5>
+                        <h5 class="numeration">3</h5>
+                    </div>
+                    <button class="switchButton swBtn-style-0" onclick="switchThem()"></button>
+                    <div class="swBtn-indicator swBtnInd-style-0" onclick="switchThem()"></div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <main class="input-output">
+                <input type="text" id="result" class="input inputStyle-0">
+            </main>
+            <div class="buttons button-sectionStyle-0">
+                <button class="btn num btnStyle-0">8</button>
+                <button class="btn num btnStyle-0">7</button>
+                <button class="btn num btnStyle-0">9</button>
+                <button class="btn del delRestStyle-0" onclick="operation('del')">DEL</button>
+                <button class="btn num btnStyle-0">4</button>
+                <button class="btn num btnStyle-0">5</button>
+                <button class="btn num btnStyle-0">6</button>
+                <button class="btn plus btnStyle-0 operatos" onclick="operation('+')" >+</button>
+                <button class="btn num btnStyle-0">1</button>
+                <button class="btn num btnStyle-0">2</button>
+                <button class="btn num btnStyle-0">3</button>
+                <button class="btn btnStyle-0 operatos" onclick="operation('-')">-</button>
+                <button class="btn dot btnStyle-0 operatos" onclick="operation('.')">.</button>
+                <button class="btn num btnStyle-0">0</button>
+                <button class="btn  btnStyle-0 operatos" onclick="operation('/')" >/</button>
+                <button class="btn btnStyle-0 operatos" onclick="operation('*')">x</button>
+                <button class="btn reset delRestStyle-0" onclick="reset()">reset</button>
+                <button class="btn equal equalStyle-0" onclick="calculate()">=</button>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
